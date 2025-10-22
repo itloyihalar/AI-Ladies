@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Story | HerVoice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">HerVoice</div>
+    <nav>
+      <a href="index.html">Back to Stories</a>
+    </nav>
+  </header>
+
+  <main class="story-content">
+    <img id="story-image" alt="Story Image" class="story-image" />
+    <h1 id="story-title"></h1>
+    <p id="story-text"></p>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2025 HerVoice. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const story = JSON.parse(localStorage.getItem("selectedStory"));
+    if (story) {
+      document.getElementById("story-title").textContent = story.title;
+      document.getElementById("story-text").textContent = story.text;
+      document.getElementById("story-image").src = story.image;
+    }
+  </script>
+</body>
+</html>
