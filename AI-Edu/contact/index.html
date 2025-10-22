@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<          <nav class="nav">
+            <a href="/" class="nav-link">Bosh Sahifa</a>
+            <a href="/about/" class="nav-link">Biz Haqimizda</a>
+            <a href="/symptoms/" class="nav-link">AI Vositalari</a>
+            <a href="/contact/" class="nav-link active">Aloqa</a>
+            <button class="theme-toggle" id="themeToggle" title="Rejimni o'zgartirish">
+              <i class="fas fa-moon"></i>
+            </button>
+          </nav>ang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biz Bilan Bog'laning - AI O'rganish Markazi</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="all__class">
+      <header class="header">
+        <div class="header-container">
+          <a href="/" class="header__title">
+            <span class="logo-icon">🤖</span>
+            AI Learning Hub
+          </a>
+          <nav class="nav">
+            <a href="/" class="nav-link">Bosh Sahifa</a>
+            <a href="/about/" class="nav-link">Biz Haqimizda</a>
+            <a href="/symptoms/" class="nav-link">AI Vositalari</a>
+            <a href="/contact/" class="nav-link active">Aloqa</a>
+          </nav>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="/" class="mobile-nav-link">Bosh Sahifa</a>
+          <a href="/about/" class="mobile-nav-link">Biz Haqimizda</a>
+          <a href="/symptoms/" class="mobile-nav-link">AI Vositalari</a>
+          <a href="/contact/" class="mobile-nav-link">Aloqa</a>
+        </div>
+      </header>
+
+      <main style="margin-top: 70px;">
+        <!-- Hero Section -->
+        <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 0; color: white; text-align: center;">
+          <div class="container">
+            <div style="max-width: 600px; margin: 0 auto;">
+              <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">
+                <i class="fas fa-envelope" style="color: #ffd93d; margin-right: 1rem;"></i>
+                Biz Bilan Bog'laning
+              </h1>
+              <p style="font-size: 1.25rem; opacity: 0.9; line-height: 1.6;">
+                AI kurslarimiz haqida savollaringiz bormi? Hamjamiyatimizga qo'shilishni xohlaysizmi? 
+                Sizdan eshitishni va AI sayohatingizni boshlashda yordam berishni xohlaymiz!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section style="padding: 80px 0; background: #f7fafc;">
+          <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+              
+              <!-- Contact Form -->
+              <div style="background: white; padding: 3rem; border-radius: 1.5rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 2rem; color: #2d3748; margin-bottom: 2rem; text-align: center;">Bizga Xabar Yuboring</h2>
+                
+                <form class="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                  <div>
+                    <label for="name" style="display: block; font-weight: 600; color: #2d3748; margin-bottom: 0.5rem;">
+                      <i class="fas fa-user" style="margin-right: 0.5rem; color: #667eea;"></i>
+                      To'liq Ismingiz *
+                    </label>
+                    <input type="text" id="name" name="name" required
+                           style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; transition: all 0.3s ease;"
+                           placeholder="To'liq ismingizni kiriting"
+                           onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102, 126, 234, 0.1)'"
+                           onblur="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'">
+                  </div>
+
+                  <div>
+                    <label for="email" style="display: block; font-weight: 600; color: #2d3748; margin-bottom: 0.5rem;">
+                      <i class="fas fa-envelope" style="margin-right: 0.5rem; color: #667eea;"></i>
+                      Email Manzilingiz *
+                    </label>
+                    <input type="email" id="email" name="email" required
+                           style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; transition: all 0.3s ease;"
+                           placeholder="sizning@email.com"
+                           onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102, 126, 234, 0.1)'"
+                           onblur="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'">
+                  </div>
+
+                  <div>
+                    <label for="subject" style="display: block; font-weight: 600; color: #2d3748; margin-bottom: 0.5rem;">
+                      <i class="fas fa-tag" style="margin-right: 0.5rem; color: #667eea;"></i>
+                      Mavzu
+                    </label>
+                    <select id="subject" name="subject"
+                            style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; transition: all 0.3s ease; background: white;"
+                            onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102, 126, 234, 0.1)'"
+                            onblur="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'">
+                      <option value="">Mavzuni tanlang...</option>
+                      <option value="courses">Kurs Ma'lumotlari</option>
+                      <option value="enrollment">Ro'yxatdan O'tish Savollari</option>
+                      <option value="technical">Texnik Yordam</option>
+                      <option value="partnership">Hamkorlik Imkoniyatlari</option>
+                      <option value="career">Karyera Yo'l-yo'riqlari</option>
+                      <option value="other">Boshqa</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="message" style="display: block; font-weight: 600; color: #2d3748; margin-bottom: 0.5rem;">
+                      <i class="fas fa-comment" style="margin-right: 0.5rem; color: #667eea;"></i>
+                      Xabar *
+                    </label>
+                    <textarea id="message" name="message" rows="5" required
+                              style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; transition: all 0.3s ease; resize: vertical; font-family: inherit;"
+                              placeholder="Sizga qanday yordam bera olishimizni aytib bering..."
+                              onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102, 126, 234, 0.1)'"
+                              onblur="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'"></textarea>
+                  </div>
+
+                  <button type="submit" style="
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    padding: 1rem 2rem;
+                    border: none;
+                    border-radius: 0.5rem;
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+                  " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(102, 126, 234, 0.4)'"
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.4)'">
+                    <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
+                    Xabar Yuborish
+                  </button>
+                </form>
+              </div>
+
+              <!-- Contact Information -->
+              <div>
+                <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 3rem; border-radius: 1.5rem; color: white; margin-bottom: 2rem;">
+                  <h3 style="font-size: 1.5rem; margin-bottom: 2rem;">Aloqa Ma'lumotlari</h3>
+                  
+                  <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                      <div style="width: 50px; height: 50px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-envelope" style="font-size: 1.25rem;"></i>
+                      </div>
+                      <div>
+                        <p style="font-weight: 600; margin-bottom: 0.25rem;">Email</p>
+                        <p style="opacity: 0.9;">support@ailearninghub.com</p>
+                      </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                      <div style="width: 50px; height: 50px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-phone" style="font-size: 1.25rem;"></i>
+                      </div>
+                      <div>
+                        <p style="font-weight: 600; margin-bottom: 0.25rem;">Telefon</p>
+                        <p style="opacity: 0.9;">+998 (90) 123-45-67</p>
+                      </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                      <div style="width: 50px; height: 50px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-map-marker-alt" style="font-size: 1.25rem;"></i>
+                      </div>
+                      <div>
+                        <p style="font-weight: 600; margin-bottom: 0.25rem;">Manzil</p>
+                        <p style="opacity: 0.9;">123 AI ko'chasi<br>Toshkent, O'zbekiston</p>
+                      </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                      <div style="width: 50px; height: 50px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-clock" style="font-size: 1.25rem;"></i>
+                      </div>
+                      <div>
+                        <p style="font-weight: 600; margin-bottom: 0.25rem;">Yordam Vaqtlari</p>
+                        <p style="opacity: 0.9;">Dush-Juma: 9:00-18:00<br>Dam olish kunlari: 10:00-16:00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+                  <h4 style="color: #2d3748; margin-bottom: 1.5rem; font-size: 1.25rem;">Tez Havolalar</h4>
+                  <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <a href="/about/" style="color: #667eea; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"
+                       onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">
+                      <i class="fas fa-info-circle"></i>
+                      Platformamiz Haqida
+                    </a>
+                    <a href="/symptoms/" style="color: #667eea; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"
+                       onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">
+                      <i class="fas fa-tools"></i>
+                      AI O'rganish Baholash
+                    </a>
+                    <a href="#" style="color: #667eea; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"
+                       onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">
+                      <i class="fas fa-graduation-cap"></i>
+                      Kurs Katalogi
+                    </a>
+                    <a href="#" style="color: #667eea; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"
+                       onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">
+                      <i class="fas fa-users"></i>
+                      Hamjamiyatga Qo'shiling
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section style="padding: 80px 0; background: white;">
+          <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+              <h2 style="font-size: 2.5rem; color: #2d3748; margin-bottom: 1rem;">Tez-tez So'raladigan Savollar</h2>
+              <p style="font-size: 1.125rem; color: #718096;">AI o'rganish platformamiz haqida umumiy savollar</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+              <div style="background: #f7fafc; padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #667eea;">
+                <h4 style="color: #2d3748; margin-bottom: 0.5rem;">AI o'rganishni qanday boshlashim mumkin?</h4>
+                <p style="color: #718096;">Qiziqishlaringiz va maqsadlaringizga asoslangan shaxsiy kurs tavsiyalarini olish uchun AI O'rganish Baholashini o'ting.</p>
+              </div>
+
+              <div style="background: #f7fafc; padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #4facfe;">
+                <h4 style="color: #2d3748; margin-bottom: 0.5rem;">Menga dasturlash tajribasi kerakmi?</h4>
+                <p style="color: #718096;">Shart emas! Biz barcha darajalar uchun kurslar taklif etamiz, to'liq boshlovchilardan ilg'or amaliyotchilargacha.</p>
+              </div>
+
+              <div style="background: #f7fafc; padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #f5576c;">
+                <h4 style="color: #2d3748; margin-bottom: 0.5rem;">Kurslarga nima kiradi?</h4>
+                <p style="color: #718096;">Interaktiv darslar, amaliy loyihalar, hamjamiyat kirishi, ekspert mentorlik va sanoat tan olgan sertifikatlar.</p>
+              </div>
+
+              <div style="background: #f7fafc; padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #43e97b;">
+                <h4 style="color: #2d3748; margin-bottom: 0.5rem;">Kursni tugatish uchun qancha vaqt kerak?</h4>
+                <p style="color: #718096;">Kurs davomiyligi murakkablik va sizning o'rganish tezligingizga qarab 4-12 hafta orasida farq qiladi.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h4>
+                <span class="logo-icon">🤖</span>
+                AI Learning Hub
+              </h4>
+              <p>Keyingi avlod AI innovatorlarini keng qamrovli ta'lim va amaliy tajriba orqali quvvatlantirish.</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-section">
+              <h4>Kurslar</h4>
+              <a href="#">Mashinani O'rganish</a>
+              <a href="#">Chuqur O'rganish</a>
+              <a href="#">Generativ AI</a>
+              <a href="#">Kompyuter Ko'rishi</a>
+              <a href="#">NLP</a>
+            </div>
+            <div class="footer-section">
+              <h4>Resurslar</h4>
+              <a href="/about/">Biz Haqimizda</a>
+              <a href="#">Blog</a>
+              <a href="#">Hujjatlar</a>
+              <a href="#">Yordam Markazi</a>
+              <a href="#">Hamjamiyat</a>
+            </div>
+            <div class="footer-section">
+              <h4>Aloqa</h4>
+              <p><i class="fas fa-envelope"></i> support@ailearninghub.com</p>
+              <p><i class="fas fa-phone"></i> +998 (90) 123-45-67</p>
+              <p><i class="fas fa-map-marker-alt"></i> Toshkent, O'zbekiston</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 AI O'rganish Markazi. Barcha huquqlar himoyalangan.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/app.js"></script>
+
+    <style>
+      /* Contact page responsive design */
+      @media (max-width: 768px) {
+        div[style*="grid-template-columns: 1fr 1fr"] {
+          display: block !important;
+        }
+        
+        div[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
+          margin-bottom: 2rem;
+        }
+      }
+    </style>
+  </body>
+</html>

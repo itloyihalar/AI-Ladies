@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI O'rganish Baholash - AI O'quv Markazi</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="all__class">
+      <header class="header">
+        <div class="header-container">
+          <a href="/" class="header__title">
+            <span class="logo-icon">🤖</span>
+            AI O'quv Markazi
+          </a>
+          <nav class="nav">
+            <a href="/" class="nav-link">Bosh sahifa</a>
+            <a href="/about/" class="nav-link">Biz haqimizda</a>
+            <a href="/symptoms/" class="nav-link active">AI Vositalar</a>
+            <a href="/contact/" class="nav-link">Aloqa</a>
+            <button class="theme-toggle" id="themeToggle" title="Rejimni o'zgartirish">
+              <i class="fas fa-moon"></i>
+            </button>
+          </nav>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="/" class="mobile-nav-link">Bosh sahifa</a>
+          <a href="/about/" class="mobile-nav-link">Biz haqimizda</a>
+          <a href="/symptoms/" class="mobile-nav-link">AI Vositalar</a>
+          <a href="/contact/" class="mobile-nav-link">Aloqa</a>
+        </div>
+      </header>
+
+      <main style="margin-top: 70px;">
+        <!-- Hero Section -->
+        <section class="assessment-hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 0; color: white; text-align: center; position: relative; z-index: 1;">
+          <div class="container">
+            <div style="max-width: 600px; margin: 0 auto;">
+              <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">
+                <i class="fas fa-brain" style="color: #ffd93d; margin-right: 1rem;"></i>
+                AI O'rganish Baholash
+              </h1>
+              <p style="font-size: 1.25rem; opacity: 0.9; line-height: 1.6;">
+                O'zingizga mos AI o'rganish yo'lini toping! Bizning interaktiv so'rovnomamizga javob berib, 
+                sizning qiziqishlaringiz va maqsadlaringizga mos shaxsiy kurs tavsiyalarini oling.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Assessment Section -->
+        <section style="padding: 80px 0; background: #f7fafc;">
+          <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+              <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; color: #2d3748; margin-bottom: 1rem;">O'zingizning AI Yo'lingizni Toping</h2>
+                <p style="font-size: 1.125rem; color: #718096;">
+                  Sizni eng ko'p qiziqtirgan AI mavzularini aniqlash va moslashtirilgan o'rganish 
+                  yo'lini olish uchun bizning keng qamrovli baholashimizdan o'ting.
+                </p>
+              </div>
+
+              <div id="questions" style="margin-bottom: 3rem;"></div>
+
+              <div style="text-align: center; margin-bottom: 3rem;">
+                <button id="submitBtn" style="
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                  color: white;
+                  padding: 1rem 3rem;
+                  border: none;
+                  border-radius: 2rem;
+                  font-size: 1.125rem;
+                  font-weight: 600;
+                  cursor: pointer;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+                " onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
+                   onmouseout="this.style.transform='translateY(0) scale(1)'">
+                  <i class="fas fa-chart-line" style="margin-right: 0.5rem;"></i>
+                  Mening O'rganish Yo'limni Bering
+                </button>
+              </div>
+
+              <div id="result" style="margin-top: 2rem;"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- AI Tools Showcase -->
+        <section style="padding: 80px 0; background: white;">
+          <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+              <h2 style="font-size: 2.5rem; color: #2d3748; margin-bottom: 1rem;">AI Vositalar va Texnologiyalarni O'rganing</h2>
+              <p style="font-size: 1.125rem; color: #718096; max-width: 600px; margin: 0 auto;">
+                Butun dunyoda mutaxassislar tomonidan qo'llaniladigan eng so'nggi AI vositalari va 
+                freymvorklari bilan amaliy tajriba oling.
+              </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+              <!-- ChatGPT & LLMs -->
+              <div style="background: linear-gradient(135deg, #ff6b6b, #ffd93d); padding: 2rem; border-radius: 1.5rem; color: white; text-align: center; transition: transform 0.3s ease;" 
+                   onmouseover="this.style.transform='translateY(-10px)'" 
+                   onmouseout="this.style.transform='translateY(0)'">
+                <i class="fas fa-comments" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Katta Til Modellari</h3>
+                <p>ChatGPT, GPT-4, Claude va boshqa kuchli til modellarini matn yaratish va tahlil qilish uchun o'rganing.</p>
+              </div>
+
+              <!-- Image Generation -->
+              <div style="background: linear-gradient(135deg, #4ecdc4, #44a08d); padding: 2rem; border-radius: 1.5rem; color: white; text-align: center; transition: transform 0.3s ease;" 
+                   onmouseover="this.style.transform='translateY(-10px)'" 
+                   onmouseout="this.style.transform='translateY(0)'">
+                <i class="fas fa-palette" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">AI Rasm Yaratish</h3>
+                <p>DALL-E, Midjourney, Stable Diffusion va boshqa generativ AI vositalar bilan ajoyib tasvirlar yarating.</p>
+              </div>
+
+              <!-- Machine Learning -->
+              <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 2rem; border-radius: 1.5rem; color: white; text-align: center; transition: transform 0.3s ease;" 
+                   onmouseover="this.style.transform='translateY(-10px)'" 
+                   onmouseout="this.style.transform='translateY(0)'">
+                <i class="fas fa-brain" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Mashinani O'rganish</h3>
+                <p>TensorFlow, PyTorch, scikit-learn va ilg'or ML algoritmlari bilan aqlli tizimlar yarating.</p>
+              </div>
+
+              <!-- Computer Vision -->
+              <div style="background: linear-gradient(135deg, #f093fb, #f5576c); padding: 2rem; border-radius: 1.5rem; color: white; text-align: center; transition: transform 0.3s ease;" 
+                   onmouseover="this.style.transform='translateY(-10px)'" 
+                   onmouseout="this.style.transform='translateY(0)'">
+                <i class="fas fa-eye" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Kompyuter Ko'rishi</h3>
+                <p>OpenCV va chuqur o'rganish bilan rasm tanish, obyekt aniqlash va vizual AI ilovalarini ishlab chiqing.</p>
+              </div>
+
+              <!-- Voice AI -->
+              <div style="background: linear-gradient(135deg, #a8edea, #fed6e3); padding: 2rem; border-radius: 1.5rem; color: #2d3748; text-align: center; transition: transform 0.3s ease;" 
+                   onmouseover="this.style.transform='translateY(-10px)'" 
+                   onmouseout="this.style.transform='translateY(0)'">
+                <i class="fas fa-microphone" style="font-size: 3rem; margin-bottom: 1rem; color: #667eea;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Ovozli AI va Nutq</h3>
+                <p>Ovozli yordamchilar, nutqni tanish tizimlari va audio ishlov berish ilovalarini yarating.</p>
+              </div>
+
+              <!-- AI Ethics -->
+              <div style="background: linear-gradient(135deg, #ffecd2, #fcb69f); padding: 2rem; border-radius: 1.5rem; color: #2d3748; text-align: center; transition: transform 0.3s ease;" 
+                   onmouseover="this.style.transform='translateY(-10px)'" 
+                   onmouseout="this.style.transform='translateY(0)'">
+                <i class="fas fa-balance-scale" style="font-size: 3rem; margin-bottom: 1rem; color: #f5576c;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">AI Axloq va Xavfsizlik</h3>
+                <p>Mas'uliyatli AI ishlab chiqish, tarafkashlikni kamaytirish va AI tizimlaridagi axloqiy masalalarni o'rganing.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="padding: 80px 0; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); text-align: center; color: white;">
+          <div class="container">
+            <div style="max-width: 600px; margin: 0 auto;">
+              <h2 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">Yaratishga Tayyormisiz?</h2>
+              <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">
+                AI ni o'zlashtirgan va karerasini o'zgartirgan minglab o'quvchilar jamiyatiga qo'shiling.
+              </p>
+              <a href="/contact/" style="
+                background: white;
+                color: #4facfe;
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.125rem;
+                display: inline-block;
+                transition: all 0.3s ease;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+              " onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
+                 onmouseout="this.style.transform='translateY(0) scale(1)'">
+                <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>
+                AI Sayohatingizni Boshlang
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h4>
+                <span class="logo-icon">🤖</span>
+                AI Learning Hub
+              </h4>
+              <p>Empowering the next generation of AI innovators through comprehensive education and hands-on experience.</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-section">
+              <h4>Courses</h4>
+              <a href="#">Machine Learning</a>
+              <a href="#">Deep Learning</a>
+              <a href="#">Generative AI</a>
+              <a href="#">Computer Vision</a>
+              <a href="#">NLP</a>
+            </div>
+            <div class="footer-section">
+              <h4>Resources</h4>
+              <a href="/about/">About Us</a>
+              <a href="#">Blog</a>
+              <a href="#">Documentation</a>
+              <a href="#">Help Center</a>
+              <a href="#">Community</a>
+            </div>
+            <div class="footer-section">
+              <h4>Contact</h4>
+              <p><i class="fas fa-envelope"></i> support@ailearninghub.com</p>
+              <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+              <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 AI Learning Hub. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
